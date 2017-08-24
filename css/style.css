@@ -1,13 +1,18 @@
 * {
 	box-sizing: border-box;
-	font-family: Helvetica, sans-serif;
 }
 
 html, body {
-	background: #faebd7;
+	background: #e3ebf7;
 	margin: 0px;
 	padding: 0px;
 	height: 100%;
+}
+
+body {
+	width: 100%;
+	background-image: url("../images/paper_3.png");
+	overflow: auto;
 }
 
 .wrapper {
@@ -15,14 +20,14 @@ html, body {
 	height: auto;
 	min-height: 100%;
 	margin: 0 auto;
-	position: relative;
 }
 
 header {
 	margin: 0 auto;
 	width: 100%;
 	background: #fff;
-	border: 1px solid lightgrey;
+	border: 1px solid #ccc;
+	border-bottom: 2px solid #ccc;
 	position: absolute;
 	overflow: auto;
 	height: 100px;
@@ -35,84 +40,221 @@ header {
 	color: white;
 	display: inline-block;
 	float: left;
-	margin-left: 100px;
-	position: absolute;
+	margin-left: 145px;
 	bottom: 0px;
 	height: 100%;
 	padding: 15px;
-
+	font-family: Georgia, Times, "Times New Roman", serif;
 }
 
 #menu {
 	display: inline-block;
 	position: relative;
-	right: 250px;
+	right: 300px;
 	float: right;
 	padding-top: 50px;
+	font-size: 18px;
+	font-family: Arial, "Helvetica Nue", Helvetica, sans-serif;
+	color: #e5e3e3;
 }
 
-img {
+a {
+	color: #777777;
+	margin: 15px;
+	text-decoration: none;
+}
+
+#profile-picture {
 	height: 200px;
 	width: 140px;
 	margin-left: 20px;
 	margin-right: 20px;
-	border: 1px solid black;
+	border: 1px solid #5a5b5b;
 	float: left;
 	clear: left;
 }
 
-#about,
+#main,
 #connect {
 	float: left;
 	background: white;
+	margin-top: 150px;
 }
 
 h2 {
 	color: #4aaaa5;
 	margin-left: 20px;
+	font-family: Georgia, Times, "Times New Roman", serif;
 }
 
-#about {
-	width: 50%;
+#main {
+	width: 650px;
 	display: inline-block;
-	margin-top: 132px;
-	margin-bottom: 100px;
-	margin-left: 100px;
-	border: 1px solid lightgrey;
+	margin-bottom: 120px;
+	margin-left: 40px;
+	border: 1px solid #ddd;
+	background: #fff;
 	position: relative;
+	left: 100px;
+	padding: 10px;
 }
+
+
+
+#contact-form {
+	padding: 0px 20px 20px 20px;
+	font-family: Arial, "Helvetica Nue", Helvetica, sans-serif;
+	font-size: 18px;
+	color: #777;
+}
+
+input[type=text] {
+	width: 100%;
+	padding: 8px;
+	margin-top: 7px;
+	font-size: 14px;
+}
+
+textarea {
+	width: 100%;
+	margin-top: 7px;
+}
+
+input[type=submit] {
+	width: 115px;
+	padding: 13px;
+	margin-top: 5px;
+	background: #4aaaa5;
+	border: none;
+	color: #fff;
+	font-family: Arial, "Helvetica Nue", Helvetica, sans-serif;
+	font-size: 16px;
+
+}
+
+
+
+.portfolio-image {
+	width: 270px;
+	height: 205px;
+	background: black;
+}
+
+.portfolio-box {
+	width: 270px;
+	height: 205px;
+	position: relative;
+	display: inline-block;
+}
+
+.portfolio-lable {
+	width: 100%;
+	background-color:#4aaaa5;
+	color: #ffffff;
+	margin: 0 auto;
+	display: inline-block;
+	position: relative;
+	bottom: 70px;
+	text-align: center;
+
+}
+
 
 p {
 	margin: 10px;
+	margin-bottom: 25px;
+	color: #777777;
+	font-family: Arial, "Helvetica Nue", Helvetica, sans-serif;
+	line-height: 150%;
 }
 
 h3 {
 	color: #4aaaa5;
+	text-align: center;
+	position: relative;
+	bottom: 10px;
+	font-family: Georgia, Times, "Times New Roman", serif;
 }
 
 #connect {
-	width: 50%;
-	border: 1px solid lightgrey;
+	width: 270px;
+	border: 1px solid #ddd;
+	background: #fff;
 	display: inline-block;
-	position: relative;
-	width: 250px;
-	height: 175px;
-	margin-top: 132px;
-	margin-left: 50px;
+	height: 200px;
 	padding: 10px;
+	position: relative;
+	left: 150px;
+}
+
+#github {
+	height: 69px;
+	width: 69px;
+	display: inline-block;
+	float: left;
+	margin-right: 10px;
+	position: relative;
+	top: 1px;
+}
+
+#linkedin {
+	height: 62px;
+	width: 62px;
+	display: inline-block;
+	float: left;
+	position: relative;
+	bottom: 13px;
+	right: 2px;
+}
+
+#stackoverflow {
+	height: 61px;
+	width: 61px;
+	display: inline-block;
+	float: left;
+	margin-left: 10px;
+	position: relative;
+	bottom: 31px;
+}
+
+#icons {
+	margin-top: 30px;
+	position: relative;
+	left: 15px;
 }
 
 footer {
 	clear: both;
 	text-align: center;
 	padding: 40px;
-	border: 1px solid lightgrey;
 	font-size: 12px;
-	background: grey;
+	background: #666;
 	color: white;
 	margin: 0 auto;
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	width: 100%;
 	height: 60px;
+	border-top: 10px solid #4aaaa5;
+}
+
+#main-line {
+	margin-bottom: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	height: 3px;
+	background-color: #d8d8d8;
+	border: none;
+}
+
+#connect-line {
+	margin-bottom: 10px;
+	height: 1.5px;
+	background-color: #d8d8d8;
+	border: none;
+	opacity: 0.5;
+}
+
+section {
+	width: 960px;
 }
