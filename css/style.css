@@ -16,10 +16,12 @@ body {
 }
 
 .wrapper {
-	height: 100%;
 	height: auto;
 	min-height: 100%;
 	margin: 0 auto;
+	width: 960px;
+	float: left;
+	/* width: 960px; float: left; -----?? */
 }
 
 header {
@@ -47,8 +49,8 @@ header {
 	font-family: Georgia, Times, "Times New Roman", serif;
 }
 
-#menu {
-	display: inline-block;
+#menu {										/* Fix withoug "fixing"?? */
+	display: inline-block;	/* Move to the right */
 	position: relative;
 	right: 300px;
 	float: right;
@@ -64,6 +66,11 @@ a {
 	text-decoration: none;
 }
 
+a:hover {
+	color: #ff0000;
+	font-weight: bold;			/* Bold changes position of nav */
+}
+
 #profile-picture {
 	height: 200px;
 	width: 140px;
@@ -77,7 +84,7 @@ a {
 #main,
 #connect {
 	float: left;
-	background: white;
+	background: #fff;
 	margin-top: 150px;
 }
 
@@ -93,7 +100,6 @@ h2 {
 	margin-bottom: 120px;
 	margin-left: 40px;
 	border: 1px solid #ddd;
-	background: #fff;
 	position: relative;
 	left: 100px;
 	padding: 10px;
@@ -137,7 +143,7 @@ input[type=submit] {
 .portfolio-image {
 	width: 270px;
 	height: 205px;
-	background: black;
+	background: green;
 }
 
 .portfolio-box {
@@ -145,6 +151,7 @@ input[type=submit] {
 	height: 205px;
 	position: relative;
 	display: inline-block;
+	left: 12px;							/*Check This*/
 }
 
 .portfolio-lable {
@@ -156,7 +163,8 @@ input[type=submit] {
 	position: relative;
 	bottom: 70px;
 	text-align: center;
-
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-size: 16px;
 }
 
 
@@ -179,7 +187,6 @@ h3 {
 #connect {
 	width: 270px;
 	border: 1px solid #ddd;
-	background: #fff;
 	display: inline-block;
 	height: 200px;
 	padding: 10px;
